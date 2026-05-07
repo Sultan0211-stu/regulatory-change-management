@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head><meta charset="UTF-8"/></head>
+<body>
+  <h2>Regulatory Change Notification</h2>
+  <p>Dear <span th:text="${recipientName}">User</span>,</p>
+  <p>A regulatory change has been <strong th:text="${action}">updated</strong>.</p>
+  <table border="1" cellpadding="8">
+    <tr><td>Title</td><td th:text="${changeTitle}">-</td></tr>
+    <tr><td>Status</td><td th:text="${status}">-</td></tr>
+    <tr><td>Effective Date</td><td th:text="${effectiveDate}">-</td></tr>
+  </table>
+  <p>Please log in to review the details.</p>
+</body>
+</html>
